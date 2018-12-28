@@ -13,7 +13,7 @@ class App extends Component {
     this.state = {
       isSectionVisible: false,
       timeout: false,
-      sectionTime: false,
+      sectionTimeout: false,
       section: '',
       loading: 'is-loading'
     }
@@ -31,6 +31,24 @@ class App extends Component {
       clearTimeout(this.timeoutId);
     }
     document.removeEventListener('mousedown', this.clickOut);
+  }
+
+  openSection = (section) => {
+    this.setState({
+      isSectionVisible: !this.isSectionVisible, section
+    })
+
+    setTimeout(() => {
+      this.setState({
+        timeout: !this.state.timeout
+      })
+    }, 325)
+
+    setTimeout(() => {
+      this.setState({
+        sectionTimeout: !this.state.sectionTimeout
+      })
+    }, 350)
   }
 
   render() {
