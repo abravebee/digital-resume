@@ -11,16 +11,26 @@ class App extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      mainNav: 'about'
+      isSectionVisible: false,
+      timeout: false,
+      sectionTime: false,
+      section: '',
+      loading: 'is-loading'
     }
 
   }
   componentDidMount = () => {
-    //
+    this.timeoutId = setTimeout(() => {
+      this.setState({ loading: '' });
+    }, 100);
+    document.addEventListener('mousedown', this.clickOut);
   }
 
   componentWillUnmount = () => {
-
+    if (this.timeoutId) {
+      clearTimeout(this.timeoutId);
+    }
+    document.removeEventListener('mousedown', this.clickOut);
   }
 
   render() {
