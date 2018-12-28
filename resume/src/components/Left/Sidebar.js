@@ -1,6 +1,11 @@
+/* == Dependencies == */
 import React, { Component } from 'react';
-
+/* == Components == */
+import MainNav from './MainNav';
+import SideHeader from './SideHeader';
+import Contact from './Contact';
 /* == Style == */
+
 
 class Sidebar extends Component {
   constructor(props) {
@@ -21,6 +26,9 @@ class Sidebar extends Component {
     return (
       <div className="Sidebar">
         Sidebar.js
+        <SideHeader />
+        <MainNav />
+        <Contact />
       </div>
     );
   }

@@ -1,5 +1,7 @@
+/* == Dependencies == */
 import React, { Component } from 'react';
-
+/* == Components == */
+import Section from './Section';
 /* == Style == */
 
 class Main extends Component {
@@ -21,6 +23,7 @@ class Main extends Component {
     return (
       <div className="Main">
         Main.js
+        <Section />
       </div>
     );
   }

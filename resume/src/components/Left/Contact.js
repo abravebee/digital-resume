@@ -25,4 +25,4 @@ class Contact extends Component {
   }
 }
 
-export default Sidebar;
+export default Contact;

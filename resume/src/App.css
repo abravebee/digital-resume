@@ -30,3 +30,18 @@
     transform: rotate(360deg);
   }
 }
+
+
+/* Borders */
+
+.App {
+  border: 1px solid black;
+}
+
+.Main {
+  border: 1px solid green;
+}
+
+.Sidebar {
+  border: 1px solid purple;
+}
