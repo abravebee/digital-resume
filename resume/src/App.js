@@ -1,5 +1,10 @@
+/* == Dependencies == */
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import { Route, NavLink, withRouter } from 'react-router-dom';
+/* == Components == */
+import Sidebar from './components/Left/Sidebar.js';
+import Main from './components/Right/Main.js';
+/* == Style == */
 import './App.css';
 
 class App extends Component {
@@ -21,6 +26,8 @@ class App extends Component {
     return (
       <div className="App">
         App.js
+      <Route exact path="/" component={Sidebar}/>
+      <Route exact path="/" component={Main}/>
       </div>
     );
   }

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import './App.css';
+/* == Style == */
 
 class Main extends Component {
   constructor(props) {

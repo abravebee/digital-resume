@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import './App.css';
+/* == Style == */
 
 class SectionHeader extends Component {
   constructor(props) {
