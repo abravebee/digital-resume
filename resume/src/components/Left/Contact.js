@@ -1,28 +1,18 @@
 import React, { Component } from 'react';
 
 
-class Contact extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-    }
+const Contact = props => {
 
-  }
-  componentDidMount = () => {
-    //
-  }
-
-  componentWillUnmount = () => {
-
-  }
-
-  render() {
     return (
       <div className="Contact">
-        Contact.js
+        <ul>
+          <li>Github</li>
+          <li>Linkedin</li>
+          <li>Twitter</li>
+          <li>Email</li>
+        </ul>
       </div>
     );
-  }
 }
 
 export default Contact;

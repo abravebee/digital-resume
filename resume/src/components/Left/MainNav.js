@@ -1,6 +1,7 @@
+/* == Dependencies == */
 import React, { Component } from 'react';
-
 /* == Style == */
+import './MainNav.css'
 
 class MainNav extends Component {
   constructor(props) {
@@ -20,12 +21,11 @@ class MainNav extends Component {
   render() {
     return (
       <div className="MainNav">
-        MainNav.js
         <nav>
             <ul>
-                <li><a href="javascript:;" onClick={() => {this.props.openSection('about')}}>About</a></li>
-                <li><a href="javascript:;" onClick={() => {this.props.openSection('projects')}}>Projects</a></li>
-                <li><a href="javascript:;" onClick={() => {console.log("HEY!!!")}}>HELLO</a></li>
+                <li><p onClick={() => {this.props.openSection('about')}}>About</p></li>
+                <li><p onClick={() => {this.props.openSection('projects')}}>Projects</p></li>
+                <li><p onClick={() => {this.props.openSection('experedu')}}>Experience &amp; Education</p></li>
              </ul>
         </nav>
       </div>

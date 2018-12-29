@@ -88,7 +88,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        App.js
+      <div className="bg">
+      <div className="app-container">
         <Sidebar
         openSection={this.openSection} 
         timeout={this.state.timeout} />
@@ -100,10 +101,9 @@ class App extends Component {
           closeSection={this.closeSection}
           setWrapperRef={this.setWrapperRef}
         />
-        {/* <Route exact path="/" component={Main}/>
-        <Route exact path="/" component={Sidebar}/> */}
+        </div>
       </div>
-     
+      </div>
     );
     
   }

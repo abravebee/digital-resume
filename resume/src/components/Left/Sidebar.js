@@ -5,7 +5,7 @@ import MainNav from './MainNav';
 import SideHeader from './SideHeader';
 import Contact from './Contact';
 /* == Style == */
-
+import './Sidebar.css'
 
 class Sidebar extends Component {
   constructor(props) {
@@ -24,9 +24,7 @@ class Sidebar extends Component {
 
   render() {
     return (
-      <div className="Sidebar">
-        Sidebar.js
-        <SideHeader />
+      <div className="Sidebar" id="sidebar" style={this.props.timeout ? {display: 'none'} : {}}>
         <MainNav 
           openSection={this.props.openSection} 
           timeout={this.props.timeout}
