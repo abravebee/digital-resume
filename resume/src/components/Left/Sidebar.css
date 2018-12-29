@@ -1,11 +1,14 @@
 .Sidebar {
     display: flex;
     flex-wrap: wrap;
-    align-self: flex-end;
     background: black;
     color: white;
-    height: 110px;
-    opacity: .85;
+    height: 100px;
+    opacity: .75;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .Sidebar ul {
