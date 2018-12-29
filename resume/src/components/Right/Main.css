@@ -1,3 +1,10 @@
+.Main {
+  display: block;
+  background: palegreen;
+  width: 700px;
+  margin: auto;
+}
+
 .inactive {
   display: none;
 }

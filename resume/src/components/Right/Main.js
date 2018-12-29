@@ -1,7 +1,6 @@
 /* == Dependencies == */
 import React, { Component } from 'react';
 /* == Components == */
-import Section from './Section';
 import About from './Sections/About';
 import Projects from './Sections/Projects';
 import ExperEdu from './Sections/ExperEdu';
@@ -12,9 +11,7 @@ class Main extends Component {
   render() {
     let close = <div className="close" onClick={() => {this.props.closeArticle()}}></div>
     return (
-      <div className="Main" ref={this.props.setWrapperRef} id="main" style={this.props.timeout ? {display: 'flex'} : {display: 'none'}}>
-        <div ref={this.props.setWrapperRef} id="main" style={this.props.timeout ? {display: 'flex'} : {display: 'none'}}>
-        
+      <div ref={this.props.setWrapperRef} id="main" className={this.props.timeout ? 'Main' : 'inactive'}>
         <section id="about" className={`${this.props.section === 'about' ? 'active' : 'inactive'} ${this.props.sectionTimeout ? 'timeout' : ''}`}>
           <About />
           {close}
@@ -31,7 +28,6 @@ class Main extends Component {
         </section>
 
         </div>
-      </div>
     );
   }
 }

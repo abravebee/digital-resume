@@ -5,12 +5,18 @@
     background: black;
     color: white;
     height: 110px;
+    opacity: .85;
 }
 
 .Sidebar ul {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.fade {
+  opacity: .75;
+  align-self: center;
 }
 
 .Contact ul {

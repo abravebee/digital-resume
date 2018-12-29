@@ -89,7 +89,7 @@ class App extends Component {
     return (
       <div className="App">
       <div className="bg">
-      <div className="app-container">
+      <div className={`app-container ${this.state.timeout ? 'app-container-open' : 'app-container-closed' }`}>
         <Sidebar
         openSection={this.openSection} 
         timeout={this.state.timeout} />
