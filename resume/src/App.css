@@ -40,8 +40,10 @@
 
 .Main {
   border: 1px solid green;
+  background: palegreen;
 }
 
 .Sidebar {
   border: 1px solid purple;
+  background: lavender;
 }

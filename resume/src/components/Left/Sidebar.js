@@ -27,7 +27,10 @@ class Sidebar extends Component {
       <div className="Sidebar">
         Sidebar.js
         <SideHeader />
-        <MainNav />
+        <MainNav 
+          openSection={this.props.openSection} 
+          timeout={this.props.timeout}
+        />
         <Contact />
       </div>
     );
