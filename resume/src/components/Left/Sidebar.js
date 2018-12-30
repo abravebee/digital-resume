@@ -24,7 +24,7 @@ class Sidebar extends Component {
 
   render() {
     return (
-      <div>
+      <div className="sidebar-wrapper">
       <SideHeader />
       <div className={`Sidebar ${this.props.timeout ? 'fade' : ''}`} id="sidebar">
         <MainNav 

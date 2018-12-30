@@ -3,8 +3,7 @@ import React, { Component } from 'react';
 /* == Style == */
 import './Sidebar.css';
 
-const SidebarHeader = props => {
-
+class SidebarHeader extends Component {
   render() {
     return (
       <div className="SidebarHeader">

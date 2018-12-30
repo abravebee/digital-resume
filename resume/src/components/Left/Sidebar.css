@@ -28,6 +28,10 @@
   justify-content: center;
 }
 
+.sidebar-wrapper {
+  width: 100%;
+}
+
 .Contact ul {
   display: flex;
   justify-content: space-around;
