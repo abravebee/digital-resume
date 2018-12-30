@@ -19,7 +19,8 @@
 
 .fade {
   opacity: .75;
-  align-self: center;
+  align-self: flex-start;
+  height: 75px;
 }
 
 .Contact ul {
@@ -30,6 +31,5 @@
 }
 
 .Contact {
-  border: 1px solid teal;
-  width: 100%;
+  width: 25%;
 }

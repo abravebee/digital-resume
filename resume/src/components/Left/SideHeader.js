@@ -20,7 +20,8 @@ class SidebarHeader extends Component {
   render() {
     return (
       <div className="SidebarHeader">
-        {/* <h1>Casey Baker</h1> */}
+        <h1>Hello.</h1>
+        <h2>I'm Casey Baker, Full Stack Software Engineer</h2>
       </div>
     );
   }

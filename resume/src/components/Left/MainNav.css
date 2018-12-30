@@ -1,6 +1,5 @@
 .MainNav {
-  border: 1px solid white;
-  width: 100%;
+  width: 65%;
   height: 60%;
 }
 
@@ -12,7 +11,7 @@
 }
 
 .MainNav nav ul li {
-  width: 30%;
+  width: 25%;
 }
 
 .MainNav ul {

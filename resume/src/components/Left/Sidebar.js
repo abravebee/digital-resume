@@ -1,6 +1,7 @@
 /* == Dependencies == */
 import React, { Component } from 'react';
 /* == Components == */
+import SideHeader from './SideHeader'
 import MainNav from './MainNav';
 import Contact from './Contact';
 /* == Style == */
@@ -23,12 +24,15 @@ class Sidebar extends Component {
 
   render() {
     return (
+      <div>
+      <SideHeader />
       <div className={`Sidebar ${this.props.timeout ? 'fade' : ''}`} id="sidebar">
         <MainNav 
           openSection={this.props.openSection} 
           timeout={this.props.timeout}
         />
         <Contact />
+      </div>
       </div>
     );
   }
