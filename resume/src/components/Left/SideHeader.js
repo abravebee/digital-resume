@@ -1,6 +1,7 @@
 /* == Dependencies == */
 import React, { Component } from 'react';
 /* == Style == */
+import './Sidebar.css';
 
 class SidebarHeader extends Component {
   constructor(props) {

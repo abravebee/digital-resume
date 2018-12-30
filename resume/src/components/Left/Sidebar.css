@@ -23,6 +23,11 @@
   height: 75px;
 }
 
+.SideHeader {
+  display: flex;
+  justify-content: center;
+}
+
 .Contact ul {
   display: flex;
   justify-content: space-around;
