@@ -1,5 +1,5 @@
+/* == Dependencies == */
 import React, { Component } from 'react';
-
 /* == Style == */
 
 class SidebarHeader extends Component {
