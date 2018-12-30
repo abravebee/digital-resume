@@ -3,20 +3,7 @@ import React, { Component } from 'react';
 /* == Style == */
 import './Sidebar.css';
 
-class SidebarHeader extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-    }
-
-  }
-  componentDidMount = () => {
-    //
-  }
-
-  componentWillUnmount = () => {
-
-  }
+const SidebarHeader = props => {
 
   render() {
     return (
